@@ -21,4 +21,9 @@ public class Test11 {
 		return answer;
 	}
 
+	public static void main(String[] args) {
+		Test11 test = new Test11();
+		
+		System.out.println(test.solution(100));
+	}
 }

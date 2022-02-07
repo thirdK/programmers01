@@ -18,22 +18,23 @@ public class Test07 {
 //	6	8
 //	16	4
 //	626331	-1
-	 public int solution(int num) {		//문제에서 제시한 int로 풀이하면 결과가 틀리다고 한다...
-	        int cnt = 0;
-	        while(true){
-	            if(num == 1){
-	                return cnt;
-	            }else if(num % 2 == 0){
-	                num /= 2;
-	                cnt++;
-	            }else{
-	                num = num*3+1;
-	                cnt++;
-	            }
-	        
-	            if(cnt==480){		//long으로 바꿔야 500이 넘는 결과가 나오고 int에서는 488이 나온다.
-	                return -1;
-	            }
-	        }
-	    }
+	public int solution(int num) { // 문제에서 제시한 int로 풀이하면 결과가 틀리다고 한다...
+		int cnt = 0;
+		while (true) {
+			if (num == 1) {
+				return cnt;
+			} else if (num % 2 == 0) {
+				num /= 2;
+				cnt++;
+			} else {
+				num = num * 3 + 1;
+				cnt++;
+			}
+
+			if (cnt == 480) { // long으로 바꿔야 500이 넘는 결과가 나오고 int에서는 488이 나온다.
+				return -1;
+			}
+		}
+	}
+
 }

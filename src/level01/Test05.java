@@ -21,4 +21,10 @@ public class Test05 {
 
 		return answer;
 	}
+	
+	public static void main(String[] args) {
+		Test05 test = new Test05();
+		
+		System.out.println(test.solution(18));
+	}
 }

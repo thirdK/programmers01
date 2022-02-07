@@ -31,4 +31,12 @@ public class Test08 {
 
 		return answer;
 	}
+
+	public static void main(String[] args) {
+		Test08 test = new Test08();
+		
+		for(int i : test.solution(3, 12)) {
+			System.out.println(i);
+		}
+	}
 }
